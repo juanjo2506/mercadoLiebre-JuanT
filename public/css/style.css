@@ -1,0 +1,471 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: white;
+}
+a{
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    padding: 5px 0;
+    font-size: 17px;
+}
+.SearchBar{
+    text-align: center;
+    width: 50%;
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+}
+
+.SearchBar > button{
+    border: none;
+    background-color: transparent;
+    text-align: center;
+    cursor: pointer;
+    height: 35px;
+    color: #666;
+    margin-top: 2px;
+}
+.SearchBarOnly{
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 15%;
+    padding:7px 8px;
+    align-self: center;
+    object-fit: cover;
+}
+
+.UltimaVisita{
+    text-align: center;
+}
+.SecondaryTitle{
+    margin: 20px;
+    margin-top: 0px;
+    padding-top: 20px;
+    color: #666;
+
+}
+.lupaSim{
+    border-style: none;
+    background-color: transparent;
+    font-size: 25px;
+    align-self: self-end;
+}
+/* .fa-bars{
+    font-size: 30px;
+    color: white;
+    background-color: #1259c3;
+    padding: 5px;
+    border-radius: 25%;
+    text-align: center;
+    display: block;
+    margin: auto;
+    width: 45px;
+} */
+.hamburguer-bottom{
+    font-size: 30px;
+    color: white;
+    background-color: #03264C;
+    padding: 5px;
+    border-radius: 25%;
+    text-align: center;
+    display: block;
+    margin: auto;
+    width: 45px;
+    max-width: 50px;
+}
+
+.fa-truck,.descripciones{
+    margin-left: 15px;
+}
+
+/* .logoLink{
+    display: block;
+    width: 40%;
+    margin-top: 0;
+    padding-top: 0;
+} */
+
+/* MODIFICACION */
+.logo{
+    width: 100%;
+    margin-top: 0;
+    padding-top: 0;
+}
+.logoLink{
+    width: 40%;
+    display: block;
+
+}
+
+
+/* .logo{
+    width: 40%;
+    margin-top: 0;
+    padding-top: 0;
+} */
+/* MODIFICACION */
+.cuerpoTexto{
+    font-size: 12px;
+}
+.TextoBusqueda{
+    font-weight: 400;
+    text-align: center;
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.barraBusqueda{
+    margin-bottom: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.small-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 15px;
+}
+.precio{
+    font-size: 18px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    width: 30%;
+    padding-left: 15px;
+}
+.descuento{
+    font-size: 16px;
+    color: #39b54a;
+    margin-top: 0px;
+    width: 70%;
+    padding-left: 28px;
+}
+
+.descripciones{
+    font-size: 16px;
+    display: none;
+    margin-top: 10px;
+    padding-right: 5px;
+    padding-bottom: 10px;
+    transition: 0.5s;
+}
+
+
+.hand{
+    width: 30px;
+    height: 30px;
+}
+.lupa{
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    padding: 2px;
+    
+}
+
+.fa-hand-holding-dollar{
+    font-size: 15px;
+    padding-right: 5px;
+}
+.fa-truck{
+    display: block;
+    margin-bottom: 0px;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+    transition: 0.5s;
+}
+.fa-truck:hover{
+    transform: rotateZ(-90deg);
+}
+.PiePagina{
+    text-align: center;
+    margin: 15px 0px;
+    padding: 15px;
+}
+.copy{
+    text-align: center;
+}
+
+footer{
+    background-color: white;
+}
+header{
+    background-color: #EAC926;
+    width: 100%;
+    padding: 20px;
+}
+main{
+    background-color: #ebebeb;
+    margin: auto;
+    width: 100%;
+}
+
+.articulos{
+    margin: 15px;
+  transition: 0.5s;
+    
+}
+.articulos:hover{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+
+.publicidad{
+    width: 100%;
+    display: block;
+}
+.contenido{
+    background-color: white;
+    border-top: 1px solid #ebebeb;
+    position: relative;
+}
+.productosImg{
+    width: 100%;
+    margin-bottom: 0px;
+}
+.main-header-bottom{
+    display: none;
+}
+.Navegar{
+
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.ofertas{
+    text-align: center;
+}
+.imgFooter{
+    transition: color 0.5s;
+    color: #1259c3;
+}
+.imgFooter:hover{
+    color: #39b54a;
+}
+
+
+@media(min-width:431px){
+    .precio{
+        font-size: 14px;
+    }
+    .descuento{
+        font-size: 12px;
+    }
+    .left-navBar{
+        padding-right: 10px;
+    }
+    .right-navBar{
+        padding-left: 10px;
+    }
+    .SearchBarOnly{
+        width: 100%;
+        height: 100%;
+        border: none;
+        border-radius: 0%;
+    }
+    .SearchBar{
+        width: 40%;
+        margin-bottom: 0px;
+    }
+    .VisitasCliente, .seccionOfertas{
+        display: flex;
+        flex-wrap: wrap;
+        direction: row;
+        justify-content: space-around;
+    }
+    .descripciones{
+        display: block;
+        margin-bottom: 1px;
+        opacity: 0;
+    }
+    .descripciones:hover{
+        opacity: 1;
+    }
+
+    
+    .hamburguer-bottom{
+        display: none;
+    }
+    .main-header-bottom{
+        display: flex;
+        justify-content: space-between;
+    }
+    .main-header-bottom ul{
+        display: flex;
+        justify-content: space-between;
+        margin: 0 5px;
+        
+    }
+    .main-header-bottom li{
+        margin: 0 3px;
+
+        padding-right: 0px;
+    }
+    .TiendaOficial a{
+        margin-right: 0px;
+    }
+    .barraBusqueda{
+        display: flex;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+    .TextoBusqueda{
+        width: 30%;
+        max-width: 350px;
+        text-align: right;
+        margin: 0;
+    }
+    .barraProvisional{
+        text-align: center;
+    }
+    .main-header-bottom a{
+        font-size: 12px;
+        margin-top: 40px;
+    }
+    .articulos{
+        /* max-width: 40%; */
+        width: 40%;
+    }
+    .logo{
+        width: 100%;
+    } 
+    .logoLink{
+        width: 25%;
+    }
+    .Navegar li a{
+        font-size: 12px;
+    }
+    .Navegar li.TiendaOficial{
+        max-width: 48px;
+    }
+/*     .lupaSim{
+
+    } */
+}
+@media(min-width:550px){
+    .Navegar li.TiendaOficial{
+        max-width: 100%;
+    }
+}
+@media(min-width:760px){
+    .precio{
+        font-size: 14px;
+    }
+    .descuento{
+        font-size: 12px;
+    }
+    .SearchBar{
+        width: 45%;
+    }
+    .VisitasCliente, .seccionOfertas{
+        display: flex;
+        flex-wrap: wrap;
+        direction: row;
+        justify-content: space-around;
+    }
+    .descripciones{
+        display: block;
+    }
+    .hamburguer-bottom{
+        display: none;
+    }
+    .main-header-bottom{
+        display: flex;
+        justify-content: space-between;
+    }
+    .main-header-bottom ul{
+        display: flex;
+        justify-content: space-between;
+    }
+    .main-header-bottom li{
+        margin: 0 5px;
+    }
+    .barraBusqueda{
+        display: flex;
+        justify-content: space-between;
+    }
+    .TextoBusqueda{
+        max-width: 350px;
+        text-align: right;
+    }
+    .barraProvisional{
+        text-align: center;
+    }
+    .main-header-bottom a{
+        font-size: 16px;
+    }
+    .articulos{
+        max-width: 20%;
+    }
+    .left-navBar{
+        margin-right: 2px;
+    }
+    .right-navBar{
+        padding-left: 2px;
+    }
+    .main-header-bottom{
+        display: flex;
+        justify-content: space-between;
+    }
+    .logoLink{
+        width: 20%;
+    }
+    footer{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        position: relative;
+    }
+    footer section.PiePagina{
+        padding-bottom: 25px;
+    }
+    .copy{
+        position: absolute;
+        bottom: 2px;
+        left: 2px;
+    }
+    .PiePagina{
+        width: 25%;
+    }
+}
+
+@media(min-width:1200px){
+    .logoLink{
+        width: 20%;
+    }
+    .barraBusqueda, .main-header-bottom{
+        max-width: 1200px;
+        margin: auto;
+
+    }
+    .main-header-bottom li{
+        margin: 0 10px;
+    }
+    .main-header-bottom a{
+        font-size: 19px;
+    }
+    .TextoBusqueda{
+        max-width: none;
+    
+    }
+    .SearchBar{
+        width: 45%;
+    }
+}

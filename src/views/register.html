@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;700&family=Nabla&family=Oswald:wght@200;300;400;500&family=Raleway:wght@300;400;700&family=Reem+Kufi+Ink&family=Roboto:ital,wght@0,300;0,400;1,100;1,300&display=swap"
+        rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/841c786b02.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/register.css">
+</head>
+
+<body>
+    <header>
+
+        <section class="barraBusqueda">
+            <a href="/" class="logoLink"><img class="logo" src="/img/logo-mercado-liebre.svg" alt="Logo"></a>
+            <!-- <p class="cuerpoTexto barraProvisional">lugar para poner la barra de busqueda<i class="fa-solid fa-magnifying-glass lupaSim"></i></p> -->
+            <!-- preguntar acerca del tamaño de tablet, si es 361 o 381, preguntar lo del position relative, pregunar lo de las tiendas oficiales -->
+            <div class="SearchBar">
+                <input type="text" placeholder="Buscar" id="busquedas" class="SearchBarOnly"><button type="submit"><i
+                        class="fa-solid fa-magnifying-glass lupaSim"></i></button>
+            </div>
+
+            <h2 class="cuerpoTexto TextoBusqueda"><i class="fa-solid fa-hand-holding-dollar"></i>Compra en cuotas y sin
+                tarjeta de credito</h2>
+            <!-- <img src="/img/lupa.svg" class="lupa" alt="lupa"> -->
+        </section>
+        <a href="#" class="hamburguer-bottom"><i class="fa-solid fa-bars"></i></a>
+        <nav class="main-header-bottom">
+            <ul class="cuerpoTexto Navegar left-navBar">
+                <li><a href="#">Ofertas</a></li>
+                <li class="TiendaOficial"><a href="#">Tiendas Oficiales</a></li>
+                <li><a href="#">Vender</a></li>
+                <li><a href="#">Ayuda</a></li>
+            </ul>
+            <ul class="cuerpoTexto Navegar right-navBar">
+                <li><a href="/">Inicio<i class="fa-solid fa-house"></i></a></li>
+                <li><a href="/login">Ingresa<i class="fa-solid fa-right-to-bracket"></i></a></li>
+                <li><a href="#">Mis compras<i class="fa-solid fa-basket-shopping"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <form action="/register" class="create-form">
+        <div class="Form-content">
+            <input type="text" name="nombre-apellido" placeholder="Nombre y Apellido" class="control" required>
+        </div>
+        <div class="Form-content">
+            <input type="text" name="nombre-usuario" placeholder="Nombre de usuario" class="control" required>
+        </div>
+        <div class="Form-content">
+            <input type="email" name="Email" placeholder="E-mail" class="control" required>
+        </div>
+
+        <div class="Form-content">
+            <label for="" class="etiqueta">Fecha de nacimiento</label>
+            <input type="date" name="Date" class="birthdate" required>
+        </div>
+
+        <div class="Form-content">
+            <input type="text" name="Direccion" placeholder="Direccion" class="control" required>
+        </div>
+
+        <div class="Form-content">
+            <label for="" class="etiqueta">Perfil de usuario:</label>
+            <label class="optionV1" for="comprador"> <input id="comprador" type="radio" name="Comprador-Vendedor"
+                    value="Comprador" required>Comprador</label>
+            <label class="optionV1" for="vendedor"> <input id="vendedor" type="radio" name="Comprador-Vendedor"
+                    value="Vendedor" required>Vendedor</label>
+        </div>
+        <!-- si le undes control D en un nombre que hayan varios se cogen todos -->
+        <div class="Form-content radioContent">
+            <label for="" class="etiqueta">Intereses:</label>
+            <label for="electro" class="option-label"> <input id="electro" type="checkbox" name="intereses"
+                    class="optionV2" value="electro">Electronica</label>
+            <label for="moda" class="option-label"> <input id="moda" type="checkbox" name="intereses" class="optionV2"
+                    value="moda">Moda</label>
+            <label for="hogar" class="option-label"> <input id="hogar" type="checkbox" name="intereses" class="optionV2"
+                    value="hogar">Hogar</label>
+            <label for="jugueteria" class="option-label"> <input id="jugueteria" type="checkbox" name="intereses"
+                    class="optionV2" value="jugueteria">Juguetera</label>
+            <label for="Sana" class="option-label"> <input id="Sana" type="checkbox" name="intereses" class="optionV2"
+                    value="Sana">Vida Sana</label>
+        </div>
+
+        <div class="Form-content">
+            <input type="password" name="password" placeholder="Elige una contraseña" class="control" required>
+        </div>
+
+        <div class="buttonContainer">
+            <button type="submit" class="button">Enviar</button>
+        </div>
+    </form>
+    <footer>
+        <section class="PiePagina">
+            <i class="fa-solid fa-credit-card imgFooter"></i>
+            <h4>Pagá con tarjeta o en efectivo</h4>
+            <p class="cuerpoTexto">Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en puntos de
+                pago.
+                ¡Y siempre es seguro!</p>
+        </section>
+        <section class="PiePagina">
+            <i class="fa-solid fa-gift imgFooter"></i>
+            <h4>Envío gratis desde $ 2.500</h4>
+            <p class="cuerpoTexto">Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de
+                productos. Es
+                un beneficio de Mercado Puntos.</p>
+        </section>
+        <section class="PiePagina">
+            <i class="fa-solid fa-user-shield imgFooter"></i>
+            <h4>Seguridad, de principio a fin</h4>
+            <p class="cuerpoTexto">¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer, porque
+                estás
+                siempre protegid@.</p>
+        </section>
+        <p class="cuerpoTexto copy">Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
+    </footer>
+</body>
+
+</html>
