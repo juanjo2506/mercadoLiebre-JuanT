@@ -22,7 +22,3 @@ app.get("/login", function (req,res) {
     res.sendFile(path.resolve(__dirname, "./src/views/login.html"))
 })
 
-/* app.post("/login", function (req, res) {
-    res.send("llego el formilario de login")
-    
-}) */
